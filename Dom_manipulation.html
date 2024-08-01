@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mydiv">
+        div
+    </div>
+    <p id="p1">
+        <a href="https://www.google.com">Google</a>
+    </p>
+
+    <p id="p2">
+        this is my paragraph tag
+    </p>
+
+    <p class="paraclass">
+        another para
+    </p>
+
+    <p id="pop">
+        para4
+    </p>
+
+    d
+
+    <a id="another">Google</a>
+    <script>
+        let para = document.getElementById("p1") // paragraph object
+        console.log(para);
+        para.style.color = "red";
+
+        let para2 = document.getElementsByTagName("p")
+        console.log(para2);
+        para2[1].style.color = "blue";
+
+        let para3 = document.getElementsByClassName("paraclass")
+        console.log(para3);
+        para3[0].style.color = "green" //color add
+
+        para3[0].innerHTML = "javascript" //add text p tag class
+        console.log(para3[0].attributes) //find attributes
+        console.log(para3[0].style) //find style
+
+        //setting a attribute
+
+        let para4 = document.getElementById("pop")
+        para4.style.backgroundColor = "red"
+        // para4.setAttribute("width","100px")
+        // para4.setAttribute("height","300px")
+        para4.style.width = "100px"
+        para4.style.height = "300px"
+
+        let another = document.getElementById("another");
+        another.href = "https://www.google.com"
+
+        let e =document.createElement("p"); // create tag
+        e.innerHTML = "new paragraph"; // add text
+        document.body.appendChild(e); // add body
+        document.getElementById("mydiv").appendChild(e);
+
+        document.body.removeChild(para) // remove class
+
+        let child = document.createElement("p")
+        child.innerHTML = "child paragraph";
+        document.replaceChild(child,para2)
+
+
+
+
+
+
+        
+
+    
+    </script>
+</body>
+</html>

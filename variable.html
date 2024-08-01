@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para"></p>
+    <p id="para1"></p>
+    <p id="para2"></p>
+    <p id="para3"></p>
+    <p id="para4"></p>
+    <p id="para5"></p>
+    <p id="para6"></p>
+    <p id="para7"></p>
+    <p id="para8"></p>
+    <p id="para9"></p>
+    <p id="para10"></p>
+
+    <script>
+        //datatype and variables
+        // 121 12.21 "hello" 'hello'
+
+        let name = 'bascom'; //string  //string datatype is a callection of characters
+
+        document.getElementById("para").innerHTML= name;
+        document.write(name);
+        console.log(name);
+
+        //this is comment
+
+        //keyword in javascript
+
+        //let var const 
+
+        let a = 12;
+        var b = 12; //if you are using older browser
+        const c = 20; //constant variable cannot be changed
+        // c = 13;
+
+        document.getElementById("para1").innerHTML= c;
+
+        { //block
+            let k = 12;
+            var l = 12; // global variable
+        }
+        // document.getElementById("para2").innerHTML= k;
+        document.getElementById("para3").innerHTML= l;
+
+        // find a area of cicle
+
+        const pi = 3.14;
+        let r = 5;
+        let area = pi*r*r;
+        document.getElementById("para4").innerHTML = area; // string variable concatenation
+
+        let m = 10 , n = 13 , o = 15 ; //multiline variable initialization and declaration
+
+        document.getElementById("para5").innerHTML = "m = " + m + " n = " + n + " o = " + o ;
+
+        let number = 1+4+5;
+        document.getElementById("para6").innerHTML ="Number is =>" + number; //10
+
+        let data = "5"+4+6;
+        document.getElementById("para7").innerHTML ="Number is =>" + data; //546
+
+        let result = number + data;
+        document.getElementById("para8").innerHTML ="Number is =>" + result;  //10546
+
+        let $ = 88.5; // lava script uses $ as a character
+
+
+    </script>
+</body>
+</html>
