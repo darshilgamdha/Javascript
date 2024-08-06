@@ -89,6 +89,15 @@
     </div>
 
     <script>
+      function getRandomColor() {
+        let letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+
       function addTodo() {
         let tag = document.getElementById("input");
 
@@ -97,12 +106,12 @@
         if (input != "") {
           let division = document.createElement("div");
           division.className = "todo-item";
+          division.style.backgroundColor = getRandomColor();
 
-          
           let todo = document.createElement("p");
           todo.innerHTML = input;
 
-          let button = document.createElement("button");
+          let button = document.createElement("button");ok
           button.innerHTML = "remove";
           button.onclick = function () {
             division.remove();
@@ -110,9 +119,6 @@
 
           division.appendChild(todo);
           division.appendChild(button);
-
-          division.style.display = "flex";
-          division.style.justifyContent = "space-between";
 
           document.getElementById("display").appendChild(division);
 

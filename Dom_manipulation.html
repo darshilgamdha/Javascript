@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div id="mydiv">
         div
@@ -24,9 +26,7 @@
     <p id="pop">
         para4
     </p>
-
-    d
-
+    
     <a id="another">Google</a>
     <script>
         let para = document.getElementById("p1") // paragraph object
@@ -57,7 +57,7 @@
         let another = document.getElementById("another");
         another.href = "https://www.google.com"
 
-        let e =document.createElement("p"); // create tag
+        let e = document.createElement("p"); // create tag
         e.innerHTML = "new paragraph"; // add text
         document.body.appendChild(e); // add body
         document.getElementById("mydiv").appendChild(e);
@@ -66,16 +66,8 @@
 
         let child = document.createElement("p")
         child.innerHTML = "child paragraph";
-        document.replaceChild(child,para2)
-
-
-
-
-
-
-        
-
-    
+        document.replaceChild(child, para2)
     </script>
 </body>
+
 </html>
